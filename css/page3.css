@@ -1,0 +1,28 @@
+#subheading_2{
+    grid-area: subh;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#onematter{
+    grid-area: mat1;
+    font-size: 1.8vh;
+
+}
+#image420{
+    grid-area: im;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#twomatter{
+    grid-area: mat2;
+    font-size: 1.8vh;
+}
+#button2{
+    background-color: rgb(241, 241, 132);
+    font-size: 1.2vh;
+}

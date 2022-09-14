@@ -1,0 +1,29 @@
+#facebook{
+    grid-area: fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+}
+#twitter{
+    grid-area: tw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+}
+#fb{
+    background-image: url("../css_images/facebook.png");
+    background-size: cover;
+    width: 70px;
+    height:70px;
+
+
+}
+#tw{
+    width: 75px;
+    height: 75px;
+    background-image: url("../css_Images/twitter.png");
+    background-size: cover;
+    border-radius: 10px solid black;
+}

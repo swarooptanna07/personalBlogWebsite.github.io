@@ -1,0 +1,379 @@
+@import "page1.css";
+@import "page2.css";
+@import "page3.css";
+
+#background{
+    background-image: linear-gradient(to right,rgb(233, 86, 86),rgb(236, 236, 103),orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#main_grid{
+    width:94vw;
+    height:158vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-gap: 1vh ;
+    grid-template-rows:11vh 3vh 27vh 27vh 27vh 27vh 19vh 10vh ;
+    grid-template-areas: "head1"
+                         "nav"       
+                         "mem1"
+                         "mem2"
+                         "mem3"
+                         "mem4"
+                         "pro"
+                         "footer";
+}
+#mainheading{
+    grid-area: head1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 5vh;
+
+}
+#navibar{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    background-image: linear-gradient(rgb(240, 150, 33), rgb(255, 255, 255));
+
+}
+.memories{
+    grid-area: mem1;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 30vw 58vw;
+    grid-template-rows: 4vh 20vh;
+    grid-template-areas: "topic topic"
+                         "img1 matter";
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(rgb(240, 150, 33), rgb(255, 255, 255));
+    color: black;
+    border-top: 2px solid black;
+
+}
+#besties{
+    border-top: 5px solid black;
+}
+#school{
+    grid-area: mem2;
+
+}
+#college{
+    grid-area: mem3;
+
+}
+#university{
+    grid-area:mem4;
+
+}
+#profile{
+    grid-area: pro;
+    display: grid;
+    grid-gap: 0.5vh;
+    grid-template-columns: 30vw 58vw;
+    grid-template-rows: 2.5vh 11vh 2vh 2vh;
+    grid-template-areas: "abt abt"
+                         "img2 nam"
+                         "link link"
+                         "work work";
+    background-image: linear-gradient(to right,rgb(240, 150, 33), rgb(255, 255, 255));
+    
+}
+#end{
+    border-top: 5px solid black;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 46vw 46vw;
+    grid-template-rows: 4vh 6vh;
+    grid-template-areas: "home home"
+                         "fb tw";
+}
+.button1{
+    font-size: 3vw;
+    font-weight: bolder;
+    background-color: rgb(247, 210, 111);
+}
+.subhead{
+    grid-area: topic ;
+    font-size: 2.1vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.image{
+    grid-area:img1 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.matter{
+    grid-area:matter;
+    font-size: 1.8vh;
+    color: black;
+
+}
+#about{
+    grid-area: abt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+
+}
+#image2{
+    grid-area: img2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#name{
+    grid-area: nam;
+    font-size: 2vh;
+
+}
+#linkedin{
+    grid-area: link;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vh;
+
+}
+#studies{
+    grid-area: work;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vh;
+}
+#home{
+    grid-area: home;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vh;
+}
+
+@media(min-device-width:1025px){
+
+#background{
+    background-image: linear-gradient(to right,rgb(233, 86, 86),rgb(236, 236, 103),orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main_grid{
+    width:96vw;
+    height:155vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: grid;
+    grid-gap: 2vh ;
+    grid-template-columns: 21.5vw 21.5vw 21.5vw 21.5vw;
+    grid-template-rows: 12vh 4vh 88vh 26vh 16vh ;
+    grid-template-areas: "headone headone headone headone"
+                         "nav nav nav nav "       
+                         "memone memtwo memthree memfour"
+                         "pro pro pro pro"
+                         "footer footer footer footer";   
+}
+#mainheading{
+    grid-area: headone;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+
+}
+#navibar{
+    grid-area: nav;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    background-image: linear-gradient(rgb(240, 150, 33), rgb(255, 255, 255));
+
+}
+.memories{
+    grid-area: memone;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-rows: 8vh 39vh 38vh;
+    grid-template-columns: 21.5vw;
+    grid-template-areas: "topic"
+                         "img1"
+                         "matter";
+    border-bottom: 2px solid black;
+    background-image: linear-gradient(rgb(240, 150, 33), rgb(255, 255, 255));
+    color: black;
+    border-top: 2px solid black;
+
+}
+#besties{
+    border-top: 5px solid black;
+}
+#school{
+    grid-area: memtwo;
+    border-top: 5px solid black;
+
+}
+#college{
+    grid-area: memthree;
+    border-top: 5px solid black;
+
+}
+#university{
+    grid-area:memfour;
+    border-top: 5px solid black;
+
+}
+#profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: pro;
+    display: grid;
+    grid-gap: 0.5vh;
+    grid-template-columns: 30vw 58vw;
+    grid-template-rows: 2.5vh 15vh 2vh 2vh;
+    grid-template-areas: "abt abt"
+                         "img2 nam"
+                         "link link"
+                         "work work";
+    background-image: linear-gradient(to right,rgb(240, 150, 33), rgb(255, 255, 255));
+    
+}
+#end{
+    border-top: 5px solid black;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 46vw 46vw;
+    grid-template-rows: 6vh 10vh;
+    grid-template-areas: "hom hom"
+                         "fb tw";
+
+}
+.button1{
+    font-size: 1.1vw;
+    font-weight: bolder;
+    background-color: rgb(247, 210, 111);
+}
+.subhead{
+    grid-area: topic ;
+    font-size: 2.5vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.image{
+    grid-area:img1 ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.matter{
+    grid-area:matter;
+    font-size: 2vh;
+    color: black;
+
+}
+#about{
+    grid-area: abt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+
+}
+#image2{
+    grid-area: img2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#name{
+    grid-area: nam;
+    font-size: 5vh;
+
+}
+#linkedin{
+    grid-area: link;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+
+}
+#studies{
+    grid-area: work;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+}
+#home{
+    grid-area: hom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vh;
+}
+#facebook{
+    grid-area: fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+}
+#twitter{
+    grid-area: tw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+}
+#fb{
+    background-image: url("../css_images/facebook.png");
+    background-size: cover;
+    width: 70px;
+    height:70px;
+
+
+}
+#tw{
+    width: 75px;
+    height: 75px;
+    background-image: url("../css_Images/twitter.png");
+    background-size: cover;
+    border-radius: 10px solid black;
+}
+}

@@ -1,0 +1,199 @@
+#background2{
+    background-image: radial-gradient(white, yellow, rgb(255, 145, 0));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#main_grid2{
+    width: 70vw;
+    height: 122vh;
+    display: grid;
+    grid-gap:2vh;
+    grid-template-rows:11vh 88vh 19vh ;
+    grid-template-areas: "hd2"
+                         "mat"
+                         "back";
+}
+#main_heading2{
+    grid-area: hd2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+}
+#blogdetails{
+    grid-area: mat;
+    display: grid;
+    grid-template-rows: 8vh 25vh 30vh 25vh;
+    grid-template-areas: "subh"
+                         "mat1"
+                         "im"
+                         "mat2";
+    background-image: linear-gradient(to right, orange,yellow);
+    box-shadow:8px 8px rgb(138, 126, 126);
+}
+#blogend{
+    grid-area: back;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    background-image: linear-gradient(white,orange,yellow);
+    display: grid;
+    grid-template-columns: 35vw 35vw;
+    grid-template-rows: 8vh 11vh;
+    grid-template-areas: "ho ho"
+                         "faceb twi";
+}
+#butn2{
+    grid-area: ho;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+#faceb{
+    grid-area: faceb;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#twit{
+    grid-area: twi;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#fb1{
+    background-image: url("../css_images/facebook.png");
+    background-size: cover;
+    width: 65px;
+    height:65px;
+
+
+}
+#tw1{
+    width: 70px;
+    height: 70px;
+    background-image: url("../css_Images/twitter.png");
+    background-size: cover;
+    border-radius: 10px solid black;
+}
+
+@media(min-device-width:1025px){
+    #background2{
+        background-image: radial-gradient(white, yellow, rgb(255, 145, 0));
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #main_grid2{
+        width: 70vw;
+        height: 122vh;
+        display: grid;
+        grid-gap:2vh;
+        grid-template-rows:11vh 88vh 19vh ;
+        grid-template-areas: "hd2"
+                             "mat"
+                             "back";
+    }
+    #main_heading2{
+        grid-area: hd2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vh;
+    }
+    #blogdetails{
+        grid-area: mat;
+        display: grid;
+        grid-template-rows: 8vh 25vh 30vh 25vh;
+        grid-template-areas: "subh"
+                             "mat1"
+                             "im"
+                             "mat2";
+        background-image: linear-gradient(to right, orange,yellow);
+        box-shadow:8px 8px rgb(138, 126, 126);
+    }
+    #blogend{
+        grid-area: back;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        background-image: linear-gradient(white,orange,yellow);
+        display: grid;
+        grid-template-columns: 35vw 35vw;
+        grid-template-rows: 8vh 11vh;
+        grid-template-areas: "ho ho"
+                             "faceb twi";
+    }
+    #subheading_2{
+        grid-area: subh;
+        font-size: 2vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #onematter{
+        grid-area: mat1;
+        font-size: 2.7vh;
+    
+    }
+    #image420{
+        grid-area: im;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #twomatter{
+        grid-area: mat2;
+        font-size: 2.7vh;
+    }
+    #butn2{
+        grid-area: ho;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1vh;
+    }
+    #faceb{
+        grid-area: faceb;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #twit{
+        grid-area: twi;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #fb1{
+        background-image: url("../css_images/facebook.png");
+        background-size: cover;
+        width: 55px;
+        height:55px;
+    
+    
+    }
+    #tw1{
+        width: 60px;
+        height: 60px;
+        background-image: url("../css_Images/twitter.png");
+        background-size: cover;
+        border-radius: 10px solid black;
+    }
+    #bt{
+        background-color: yellow;
+        height: 3vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
